@@ -9,8 +9,8 @@
 <launch>
     <arg name="scenario" default="wwt_plant" />
     <arg name="simulation" default="1ms" />
-    <arg name="source_location_x" default="-22.5" />
-    <arg name="source_location_y" default="18.5" />
+    <arg name="source_location_x" default="-22.50" />
+    <arg name="source_location_y" default="18.50" />
     <arg name="source_location_z" default="17.0" />
 
         ### ROBOT SIMULATION ###
