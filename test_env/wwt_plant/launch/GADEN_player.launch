@@ -4,9 +4,9 @@
     
     <arg name="scenario" default="wwt_plant" />
     <arg name="simulation" default="1ms" />
-    <arg name="source_location_x" default="-22.50" />
-    <arg name="source_location_y" default="18.50" />
-    <arg name="source_location_z" default="17.00" />
+    <arg name="source_location_x" default="-7.00" />
+    <arg name="source_location_y" default="7.00" />
+    <arg name="source_location_z" default="5.50" />
     ### NODE environment (for RVIZ visualization) ###
     
      ### NODE environment (for RVIZ visualization) ###
@@ -18,7 +18,7 @@
         # Plot CAD models (Collada format .dae)
         <param name="number_of_CAD" value="1"/>
         <rosparam subst_value="True">
-            CAD_0: package://test_env/$(arg scenario)/cad_models/object.dae
+            CAD_0: package://test_env/$(arg scenario)/cad_models/wwt_objects.dae
             CAD_0_color: [0.32, 0.36, 0.36]
         </rosparam>
 	            

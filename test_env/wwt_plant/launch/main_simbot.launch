@@ -9,9 +9,9 @@
 <launch>
     <arg name="scenario" default="wwt_plant" />
     <arg name="simulation" default="1ms" />
-    <arg name="source_location_x" default="-22.50" />
-    <arg name="source_location_y" default="18.50" />
-    <arg name="source_location_z" default="17.0" />
+    <arg name="source_location_x" default="-7.00" />
+    <arg name="source_location_y" default="7.00" />
+    <arg name="source_location_z" default="5.50" />
 
         ### ROBOT SIMULATION ###
     <!-- <param name="use_sim_time" value="true" /> -->
@@ -68,7 +68,7 @@
         # Plot CAD models (Collada format .dae)
         <param name="number_of_CAD" value="1"/>
         <rosparam subst_value="True">
-            CAD_0: package://test_env/$(arg scenario)/cad_models/object.dae
+            CAD_0: package://test_env/$(arg scenario)/cad_models/wwt_objects.dae
             CAD_0_color: [0.32, 0.36, 0.36]
         </rosparam>
 	            
@@ -134,7 +134,7 @@
     </node>
   </group>
   <node pkg="tf" type="static_transform_publisher" name="mox_broadcaster" args="0.0 0.0 0.0 0 0 0 base_link mox_frame 100" />
-  <!-- <node pkg="tf" type="static_transform_publisher" name="mox_broadcaster" args="0.0 0.0 0.0 0 0 0 uav_1/base_link mox_frame 100" /> -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="mox_broadcaster" args="-22.5 18.0 17.5 0 0 0 map mox_frame 100" /> -->
   
   <group ns="Anemometer">
     <node pkg="simulated_anemometer" type="simulated_anemometer" name="fake_anemometer" output="screen">	        

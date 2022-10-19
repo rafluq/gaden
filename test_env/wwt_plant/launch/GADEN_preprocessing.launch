@@ -8,23 +8,23 @@
     <node pkg="gaden_preprocessing" type="preprocessing" name="preprocessing" output="screen" >
 
         #Cell size
-        <param name="cell_size" value="1"/>    
+        <param name="cell_size" value="0.2"/>    
         
         #CAD models of the enviroment (.stl)
         <param name="number_of_models" value="2"/>
-        <param name="model_0" value="$(find test_env)/$(arg scenario)/cad_models/walls.stl"/>
-	<param name="model_1" value="$(find test_env)/$(arg scenario)/cad_models/object.stl"/>
+        <param name="model_0" value="$(find test_env)/$(arg scenario)/cad_models/wwt_walls.stl"/>
+	    <param name="model_1" value="$(find test_env)/$(arg scenario)/cad_models/wwt_objects.stl"/>
                 
         #CAD model of the outlets (.stl)
         <param name="number_of_outlet_models" value="1"/>
-	<param name="outlets_model_0" value="$(find test_env)/$(arg scenario)/cad_models/walls.stl"/>
+	    <param name="outlets_model_0" value="$(find test_env)/$(arg scenario)/cad_models/wwt_walls.stl"/>
 
         #3D Location of a point in free-space
         <param name="empty_point_x" value="0.0"/>      ### (m)
         <param name="empty_point_y" value="0.0"/>      ### (m)
-        <param name="empty_point_z" value="30.0"/>      ### (m)
+        <param name="empty_point_z" value="5.0"/>      ### (m)
         
-	<param name="worldFile" value="$(find test_env)/$(arg scenario)/launch/ros/stage.world"/>      ### leave empty if you dont want it to be automatically modified
+	    <param name="worldFile" value="$(find test_env)/$(arg scenario)/launch/ros/stage.world"/>      ### leave empty if you dont want it to be automatically modified
     
 
         #Wind Data (the node will append _i.csv to the name that is specified here)
