@@ -144,7 +144,7 @@
       <param name="/use_map_ref_system" value="false"/>
     </node>
   </group>
-  <node pkg="tf" type="static_transform_publisher" name="anemometer_broadcaster" args="0.0 0.0 15.0 0 0 0 map anemometer_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="anemometer_broadcaster" args="0.0 0.0 5.0 0 0 0 map anemometer_frame 100" />
   <!-- <node pkg="tf" type="static_transform_publisher" name="anemometer_broadcaster" args="0.0 0.0 0.3 0 0 0 uav_1/base_link anemometer_frame 100" /> -->
 
   # MAP SERVER
